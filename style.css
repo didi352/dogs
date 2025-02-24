@@ -13,6 +13,7 @@ body {
     padding: 20px 10%;
 }
 
+/* Záhlaví */
 header {
     background-color: #ffccff; /* Světle růžová pro záhlaví */
     color: #333;
@@ -33,14 +34,22 @@ header p {
     font-size: 1.2em;
     margin-top: 10px;
     font-style: italic;
+    color: #ff66b2;
 }
 
+/* Sekce */
 section {
     background-color: #fff;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 30px;
+    border: 2px solid rgba(255, 102, 178, 0.5); /* Jemné růžové ohraničení */
+    transition: border 0.3s ease;
+}
+
+section:hover {
+    border-color: #ff66b2; /* Zesílené růžové ohraničení při hoveru */
 }
 
 section img {
@@ -50,16 +59,33 @@ section img {
     display: block;
     margin: 20px auto;
     border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Nadpisy sekcí */
 h2, h3 {
     color: #ff66b2; /* Světle růžová pro nadpisy */
     margin-top: 20px;
-    font-size: 2em;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Jemný stín pro zvýraznění */
 }
 
-/* Odkazy v textu */
+/* Texty */
+p, ul li {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+p {
+    background-color: rgba(255, 102, 178, 0.1); /* Světle růžové pozadí textu */
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
 a {
     color: #ff66b2;
     text-decoration: none;
@@ -77,6 +103,7 @@ table {
     border-collapse: collapse;
     background-color: #f9f9f9;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 table, th, td {
@@ -98,13 +125,14 @@ td {
     background-color: white;
     color: #333;
     font-size: 1.1em;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1); /* Jemný stín pro text v tabulkách */
 }
 
 td:hover {
-    background-color: #ffebf2; /* Jemný růžový odstín při najetí */
+    background-color: rgba(255, 102, 178, 0.2); /* Jemně růžová při hoveru */
 }
 
-/* Úprava pro tlačítka */
+/* Tlačítka */
 button {
     background-color: #ff66b2;
     color: white;
@@ -113,11 +141,13 @@ button {
     border-radius: 5px;
     font-size: 1.2em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background-color: #e6007f; /* Tmavší růžová při najetí */
+    background-color: #e6007f;
+    transform: scale(1.05); /* Zvětšení tlačítka při hoveru */
 }
 
 /* Odkazy na seznamy */
