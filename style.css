@@ -1,4 +1,4 @@
-/* Resetování některých základních stylů */
+/* Reset základních stylů */
 * {
     margin: 0;
     padding: 0;
@@ -6,51 +6,156 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #fff; /* Bílé pozadí pro čistý vzhled */
+    color: #333;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    padding: 20px 10%;
 }
 
 header {
+    background-color: #ffccff; /* Světle růžová pro záhlaví */
+    color: #333;
     text-align: center;
-    background-color: #3498db;
-    color: white;
-    padding: 20px;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
-h1 {
-    font-size: 2.5em;
+header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-style: italic;
 }
 
 section {
-    padding: 20px;
-    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
 }
 
-h2, h3 {
-    margin-top: 20px;
-}
-
-img {
-    width: 80%;
+section img {
+    width: 100%;
     max-width: 800px;
     height: auto;
-    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
 }
 
-footer {
-    text-align: center;
-    background-color: #3498db;
-    color: white;
-    padding: 10px;
+/* Nadpisy sekcí */
+h2, h3 {
+    color: #ff66b2; /* Světle růžová pro nadpisy */
     margin-top: 20px;
+    font-size: 2em;
 }
 
+/* Odkazy v textu */
 a {
-    color: white;
+    color: #ff66b2;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
+    text-decoration: underline;
+}
+
+/* Styl pro tabulky */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ff66b2; /* Růžové okraje */
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff66b2;
+    color: white;
+    font-size: 1.2em;
+}
+
+td {
+    background-color: white;
+    color: #333;
+    font-size: 1.1em;
+}
+
+td:hover {
+    background-color: #ffebf2; /* Jemný růžový odstín při najetí */
+}
+
+/* Úprava pro tlačítka */
+button {
+    background-color: #ff66b2;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6007f; /* Tmavší růžová při najetí */
+}
+
+/* Odkazy na seznamy */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+ul li a {
+    color: #ff66b2;
+    font-size: 1.3em;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #ffccff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #ff66b2;
+    font-weight: bold;
+}
+
+footer a:hover {
     text-decoration: underline;
 }
