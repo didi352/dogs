@@ -13,6 +13,37 @@ body {
     padding: 20px 10%;
 }
 
+/* Navigační lišta */
+nav {
+    background-color: #ff66b2; /* Růžová barva pro lištu */
+    padding: 10px 0;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #333; /* Při hoveru se změní barva na černou */
+}
+
 /* Záhlaví */
 header {
     background-color: #ffccff; /* Světle růžová pro záhlaví */
@@ -28,7 +59,6 @@ header h1 {
     font-size: 3.5em;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333; /* Černá pro hlavní nadpis */
 }
 
 header p {
@@ -64,17 +94,10 @@ section img {
 }
 
 /* Nadpisy sekcí */
-h2 {
-    color: #333; /* Černá pro nadpisy sekcí */
+h2, h3 {
+    color: #ff66b2; /* Světle růžová pro nadpisy */
     margin-top: 20px;
     font-size: 2.5em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Jemný stín pro zvýraznění */
-}
-
-h3 {
-    color: #ff66b2; /* Růžová pro podnadpisy */
-    margin-top: 20px;
-    font-size: 2em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Jemný stín pro zvýraznění */
 }
 
