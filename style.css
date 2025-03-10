@@ -195,42 +195,4 @@ button:hover {
     transform: scale(1.05); /* Zvětšení tlačítka při hoveru */
 }
 
-/* Odkazy na seznamy */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 15px 0;
-}
-
-ul li a {
-    color: #ff66b2;
-    font-size: 1.3em;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #ffccff;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
-    font-size: 1.1em;
-    margin-top: 30px;
-}
-
-footer a {
-    color: #ff66b2;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-} 
+/* Odkazy na seznamy *
