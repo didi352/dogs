@@ -99,11 +99,19 @@ h1 {
     color: #333; /* Hlavní nadpisy budou černé */
 }
 
-/* Podnadpisy (h2, h3) - růžové */
-h2, h3 {
-    color: #ff66b2; /* Růžová pro podnadpisy */
+/* Podnadpisy (h2) - černé */
+h2 {
+    color: #333; /* Změna barvy podnadpisů na černou */
     margin-top: 20px;
     font-size: 2.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Jemný stín pro zvýraznění */
+}
+
+/* Podnadpisy (h3) - růžové */
+h3 {
+    color: #ff66b2; /* Změna barvy h3 na růžovou */
+    margin-top: 20px;
+    font-size: 2.2em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Jemný stín pro zvýraznění */
 }
 
@@ -225,5 +233,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
+} 
