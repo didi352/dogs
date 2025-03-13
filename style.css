@@ -45,14 +45,14 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #333;
-}
-
 /* Zvýraznění aktivní stránky */
 nav ul li a.active {
     text-decoration: underline;
     color: #e6007f;
+}
+
+nav ul li a:hover {
+    color: #333;
 }
 
 /* Tlačítko hamburger menu */
@@ -107,23 +107,23 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Responzivní design */
+/* Oprava responzivního menu */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
     nav ul {
         display: none;
         flex-direction: column;
         background-color: #ff66b2;
         position: absolute;
-        top: 60px;
+        top: 50px;
         width: 100%;
         text-align: center;
     }
 
     nav ul.active {
         display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
     }
 }
