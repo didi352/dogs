@@ -84,15 +84,22 @@ section:hover {
     border-color: #ff66b2; /* Zesílené růžové ohraničení při hoveru */
 }
 
-/* UPRAVENÝ STYL PRO OBRÁZKY */
+/* Upravený styl pro obrázky */
 section img, img {
-    width: 80%; /* Zmenšení obrázků na 80% šířky sekce */
-    max-width: 400px; /* Maximální šířka obrázku */
-    height: auto;
+    width: 100%; /* Obrázek bude mít maximální šířku rodiče */
+    max-width: 400px; /* Maximální velikost obrázku */
+    height: auto; /* Zachová poměr stran */
     display: block;
-    margin: 20px auto;
-    border-radius: 10px; /* Zaoblené rohy */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Zrušení okrajů, aby obrázek vyplnil prostor */
+    border-radius: 0; /* Odstranění zaoblení rohů */
+    box-shadow: none; /* Odstranění stínů */
+    object-fit: cover; /* Obrázky se natáhnou tak, aby vyplnily celý prostor */
+}
+
+/* Zarovnání obrázků doleva */
+section img {
+    float: left;
+    margin-right: 20px; /* Malá mezera mezi obrázkem a textem */
 }
 
 /* Hlavní nadpisy (h1) - černé */
@@ -194,4 +201,4 @@ button {
 button:hover {
     background-color: #e6007f;
     transform: scale(1.05); /* Zvětšení tlačítka při hoveru */
-} 
+}
